@@ -1,0 +1,65 @@
+﻿<div id="coupons" style="padding: 10px;">
+    <div style="padding: 5px;">
+        This module can be used to generate variety of fairly complex coupon/voucher codes.
+    </div>
+        <div style="padding: 5px;">
+            <strong>Prefix</strong>: will add this value in start of every coupon<br />
+            <strong>Postfix</strong>: will add this value at the end of every coupon<br />
+            <strong>Characters in Coupons</strong>: List of Alpha Numeric Characters<br />
+            <strong>Length</strong>: Length of random numbers<br />
+            <strong>No Of Coupons</strong>: Required number of coupons
+        </div>
+        <div style="padding: 5px;">
+            <input type="text"
+                   name="anPrefix"
+                   id="anPrefix"
+                   value=""
+                   data-dojo-type="dijit/form/TextBox"
+                   data-dojo-attach-point="anPrefix">
+            <label for="anPrefix">Prefix</label>
+        </div>
+        <div style="padding: 5px;">
+            <input type="text"
+                   name="anChars"
+                   id="anChars"
+                   value="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                   data-dojo-type="dijit/form/TextBox"
+                   data-dojo-attach-point="anChars">
+            <label for="anChars">Characters in Coupons</label>
+        </div>
+        <div style="padding: 5px;">
+            <input type="text"
+                   name="anPostfix"
+                   id="anPostfix"
+                   value=""
+                   data-dojo-type="dijit/form/TextBox"
+                   data-dojo-attach-point="anPostfix">
+            <label for="anPostfix">Postfix</label>
+        </div>
+        <div style="padding: 5px;">
+            <input type="text"
+                   name="anLength"
+                   id="anLength"
+                   value="8"
+                   data-dojo-type="dijit/form/TextBox"
+                   data-dojo-attach-point="anLength">
+            <label for="anLength">Length</label>
+        </div>
+        <div style="padding: 5px;">
+            <input type="text"
+                   name="anNoOfCoupons"
+                   id="anNoOfCoupons"
+                   value="10"
+                   data-dojo-type="dijit/form/TextBox"
+                   data-dojo-attach-point="anNoOfCoupons">
+            <label for="anNoOfCoupons">No Of Coupons</label>
+        </div>
+        <div style="padding: 5px;">
+            <input type="button"
+                   name="but"
+                   id="but"
+                   value="Generate"
+                   data-dojo-attach-point="addButton" data-dojo-attach-event="click: _onButtonClick">
+        </div>
+        <div data-dojo-attach-point="coupon_random_results"></div>
+    </div>
